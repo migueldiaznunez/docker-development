@@ -9,3 +9,5 @@ gitlab/logs/
 gitlab/conf/
 
 nexus3/data/
+
+docker-registry/data/
