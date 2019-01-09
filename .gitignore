@@ -7,3 +7,5 @@ gitlab/data/
 gitlab/logs/
 
 gitlab/conf/
+
+nexus3/data/
