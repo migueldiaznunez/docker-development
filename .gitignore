@@ -1,0 +1,9 @@
+.DS_Store
+
+jenkins/data/
+
+gitlab/data/
+
+gitlab/logs/
+
+gitlab/conf/

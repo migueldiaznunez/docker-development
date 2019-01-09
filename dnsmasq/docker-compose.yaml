@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  dnsmasq:
+    image: jpillora/dnsmasq
+    ports:
+      - "53:53/udp"
+      - "5380:8080"
+    environment: 
+      - "HTTP_USER=foo"
+      - "HTTP_PASS=bar"
+    volumes:
+      - type: bind
+        source: ./conf/dnsmasq.conf
+        target: /etc/dnsmasq.conf
+    container_name: dnsmasq
