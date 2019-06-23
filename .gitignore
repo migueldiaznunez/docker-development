@@ -1,13 +1,8 @@
 .DS_Store
-
 jenkins/data/
-
 gitlab/data/
-
 gitlab/logs/
-
 gitlab/conf/
-
+grafana/data/
 nexus3/data/
-
 docker-registry/data/
