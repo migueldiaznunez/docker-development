@@ -1,6 +1,6 @@
 version: '3.7'
 services:
-  artifactory:
+  artifactory-ce:
     image: docker.bintray.io/jfrog/artifactory-cpp-ce
     ports:
       - "8081:8081"
@@ -8,4 +8,4 @@ services:
       - type: bind
         source: ./data
         target: /var/opt/jfrog/artifactory
-    container_name: artifactory
+    container_name: artifactory-ce

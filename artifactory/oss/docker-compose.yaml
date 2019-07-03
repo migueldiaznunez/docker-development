@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  artifactory-oss:
+    image: docker pull docker.bintray.io/jfrog/artifactory-oss:latest
+    ports:
+      - "8081:8081"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /var/opt/jfrog/artifactory
+    container_name: artifactory-oss
