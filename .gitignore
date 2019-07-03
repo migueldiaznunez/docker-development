@@ -1,4 +1,5 @@
 .DS_Store
+artifactory/data/
 jenkins/data/
 gitlab/data/
 gitlab/logs/
