@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+  rabbit-mq:
+    image: rabbitmq:latest
+    ports:
+      - "5672:5672"
+    volumes:
+      - type: bind
+        source: ./data
+        target: /var/lib/rabbitmq
+    container_name: rabbit-mq
+  rabbit-mq-management:
+    image: rabbitmq:management
+    ports:
+      - "15672:15672"
+    container_name: rabbit-mq-management
